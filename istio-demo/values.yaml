@@ -2,3 +2,5 @@ service:
   name: "reviews"
 pr:
   number: "123"
+containers:
+  image: "docker.io/istio/examples-bookinfo-reviews-v2:1.18.0"

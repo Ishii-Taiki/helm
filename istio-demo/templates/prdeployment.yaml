@@ -20,7 +20,7 @@ spec:
       serviceAccountName: bookinfo-{{ .Values.service.name }}
       containers:
       - name: {{ .Values.service.name }}
-        image: docker.io/istio/examples-bookinfo-reviews-v2:1.18.0
+        image: {{ .Values.container.image }}
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
