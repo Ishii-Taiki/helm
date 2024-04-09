@@ -4,3 +4,4 @@ metadata:
   name: {{ .Values.service.name }}-{{ .Values.pr.number }}
   labels:
     name: {{ .Values.service.name }}
+    istio.io/rev: 1-19-3
