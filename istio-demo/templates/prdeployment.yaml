@@ -17,7 +17,7 @@ spec:
         app: {{ .Values.service.name }}
         pr: "{{ .Values.pr.number }}"
     spec:
-      serviceAccountName: bookinfo-{{ .Values.service.name }}
+      serviceAccountName: {{ .Values.service.name }}-{{ .Values.pr.number }}
       containers:
       - name: {{ .Values.service.name }}
         image: {{ .Values.container.image }}
