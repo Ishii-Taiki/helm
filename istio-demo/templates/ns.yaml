@@ -1,6 +1,0 @@
-kind: Namespace
-apiVersion: v1
-metadata:
-  name: {{ .Values.service.name }}-{{ .Values.pr.number }}
-  labels:
-    name: {{ .Values.service.name }}
